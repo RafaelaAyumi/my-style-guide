@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide - Rafaela Ayumi</title>
+  <style>
+    :root {
+      --fundo-lilas: #f1ebf9;
+      --roxo-primario: #9474a9;
+      --roxo-escuro: #5f4b8b;
+      --destaque: #d64161;
+      --texto: #555555;
+      --branco: #ffffff;
+      --cinza-suave: #e0d7ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: var(--fundo-lilas);
+      color: var(--texto);
+    }
+
+    h1, h2, h3 {
+      color: var(--roxo-escuro);
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background-color: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .botao-primario {
+      background-color: var(--roxo-primario);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao-primario:hover {
+      background-color: var(--destaque);
+    }
+
+    a {
+      color: var(--roxo-primario);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--destaque);
+    }
+
+    .onda {
+      width: 100%;
+      height: 80px;
+      line-height: 0;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .onda svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .exemplo {
+      padding: 20px;
+      border-left: 4px solid var(--roxo-primario);
+      background-color: var(--branco);
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Style Guide - Rafaela Ayumi</h1>
+
+  <div class="section">
+    <h2>Paleta de Cores</h2>
+    <div class="exemplo">
+      <p><strong>Fundo Lilás:</strong> #f1ebf9</p>
+      <p><strong>Primário:</strong> #9474a9</p>
+      <p><strong>Roxo Escuro:</strong> #5f4b8b</p>
+      <p><strong>Destaque:</strong> #d64161</p>
+      <p><strong>Texto:</strong> #555555</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Botão Primário</h2>
+    <button class="botao-primario">Clique Aqui</button>
+  </div>
+
+  <div class="section">
+    <h2>Links</h2>
+    <p>Este é um <a href="#">link de exemplo</a> com hover personalizado.</p>
+  </div>
+
+  <div class="section">
+    <h2>Cartões e Sombras</h2>
+    <div class="card">
+      <h3>Cartão de Exemplo</h3>
+      <p>Este é um bloco de conteúdo com sombra e cantos arredondados.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Onda Decorativa</h2>
+    <div class="onda">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#f1ebf9" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,74.7C480,107,600,181,720,186.7C840,192,960,128,1080,90.7C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      </svg>
+    </div>
+  </div>
+
+</body>
+</html>
